@@ -15,9 +15,11 @@ export class CartFormFunctions
     static aplicarAlgoritmoLuhn(numero)
     {
         const digitos = numero.split('').map(Number);
-        for (let i = digitos.length - 2; i >= 0; i -= 2) {
+        for (let i = digitos.length - 2; i >= 0; i -= 2) 
+        {
             let doble = digitos[i] * 2;
-            if (doble > 9) {
+            if (doble > 9) 
+            {
                 doble -= 9;
             }
             digitos[i] = doble;
